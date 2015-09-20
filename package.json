@@ -1,0 +1,32 @@
+{
+  "name": "universal-react-redux-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate for a universal React.js / Redux setup with Express back-end (EcmaScript 2015)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zetkin/universal-react-redux-boilerplate.git"
+  },
+  "keywords": [
+    "universal",
+    "react",
+    "redux",
+    "express",
+    "ecmascript 2015"
+  ],
+  "author": "Richard Olsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zetkin/universal-react-redux-boilerplate/issues"
+  },
+  "homepage": "https://github.com/zetkin/universal-react-redux-boilerplate",
+  "dependencies": {
+    "express": "^4.13.3",
+    "react": "^0.13.3",
+    "react-redux": "^2.1.2",
+    "redux": "^3.0.0"
+  }
+}
