@@ -1,0 +1,6 @@
+app:
+    build: ./app/
+    volumes:
+        - ../:/var/app
+    ports:
+        - 8000:8000
