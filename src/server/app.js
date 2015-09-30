@@ -1,16 +1,22 @@
 import express from 'express';
 import React from 'react/addons';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 
+import appState from '../reducers';
 import App from '../components/App';
 
 
 const app = express();
 
-
 app.use(function(req, res, next) {
+    req.store = createStore(appState);
+
     try {
         const html = React.renderToString(
-            React.createElement(App)
+            <Provider store={ req.store }>
+                { () => <App /> }
+            </Provider>
         );
 
         res.send(html);
