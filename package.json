@@ -4,6 +4,7 @@
   "description": "Boilerplate for a universal React.js / Redux setup with Express back-end (EcmaScript 2015)",
   "main": "index.js",
   "scripts": {
+    "start": "node dist/app/server/main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -28,5 +29,10 @@
     "react": "^0.13.3",
     "react-redux": "^2.1.2",
     "redux": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "vinyl-fs": "^2.1.1"
   }
 }
