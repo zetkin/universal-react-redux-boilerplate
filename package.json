@@ -7,6 +7,7 @@
     "start": "node dist/app/server/main",
     "postinstall": "gulp",
     "dev:watch": "gulp watch",
+    "dev:hotload": "node dist/app/server/webpack",
     "dev:test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -33,10 +34,13 @@
     "redux": "^3.0.0"
   },
   "devDependencies": {
+    "deepmerge": "^0.2.10",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "gulp-newer": "^0.5.1",
     "gulp-shell": "^0.4.3",
-    "webpack": "^1.12.2"
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }
