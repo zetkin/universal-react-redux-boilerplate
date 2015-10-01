@@ -25,6 +25,7 @@ export default class App extends React.Component {
                 <head>
                     <title>Hello</title>
                     <script src="/static/main.js"></script>
+                    <link rel="stylesheet" href="/static/css/style.css"/>
                 </head>
                 <body>
                     <Hello message={ this.props.message }/>

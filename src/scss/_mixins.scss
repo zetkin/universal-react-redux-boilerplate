@@ -1,0 +1,11 @@
+@mixin medium-screen {
+    @media (min-width: #{$medium-min-width}) {
+        @content;
+    }
+}
+
+@mixin wide-screen {
+    @media (min-width: #{$wide-min-width}) {
+        @content;
+    }
+}
