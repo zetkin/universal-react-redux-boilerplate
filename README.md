@@ -7,6 +7,7 @@ amazing open-source technologies:
 * Express for the server-side routing and logic
 * Gulp for build task management
 * Webpack for bundling javascript
+* React Hot Loader and Redux Dev Tools for fast iteration during development
 
 Universal means that the same code is run both on the server and on the client
 (Browser). The language used is EcmaScript 2015 (modern Javascript) with some
