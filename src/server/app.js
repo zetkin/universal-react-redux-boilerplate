@@ -1,7 +1,7 @@
+import { createStore } from 'redux';
 import express from 'express';
 import path from 'path';
 import React from 'react/addons';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 import appState from '../reducers';
