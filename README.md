@@ -17,10 +17,34 @@ or deployed to any environment that supports Node.js.
 This is the setup that we are transitioning our applications to at the Zetkin
 Foundation.
 
+## Development
+When developing using this set-up, you should be running three long-running
+tasks. Start them in three different terminal windows for simplicity
+
+### Watcher
+The (Gulp) watcher transpiles Javascript, translates SCSS and minifies images
+as they are changed. Run it using npm run:
+
+    $ npm run dev:watch
+
+### Hot loading server
+The Webpack development server is used to reload React components on the fly
+as their source code changes. It transfers already transpiled javascript to
+the client which hot loads them in place.
+
+    $ npm run dev:hotload
+
+### Application server
+Thirdly, the application server must be run. This is the same as the server
+that is also used in production, but without the `NODE_ENV` variabe defined.
+
+See separate instructions depending on whether you want to run using the Node
+version installed on the host system or in Docker.
+
 ## Build and run
 
     $ npm install
-    $ npm start
+    $ NODE_ENV=production npm start
 
 ## Running in Docker
 This repository contains a [Docker][1] image definition that can be used to
