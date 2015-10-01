@@ -27,7 +27,6 @@
   "homepage": "https://github.com/zetkin/universal-react-redux-boilerplate",
   "dependencies": {
     "express": "^4.13.3",
-    "gulp-shell": "^0.4.3",
     "react": "^0.13.3",
     "react-redux": "^2.1.2",
     "redux": "^3.0.0"
@@ -35,6 +34,8 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
-    "vinyl-fs": "^2.1.1"
+    "gulp-newer": "^0.5.1",
+    "gulp-shell": "^0.4.3",
+    "webpack": "^1.12.2"
   }
 }
