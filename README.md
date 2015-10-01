@@ -5,6 +5,8 @@ amazing open-source technologies:
 * React.js for view rendering (universal)
 * Redux as a Flux implementation (universal)
 * Express for the server-side routing and logic
+* Gulp for build task management
+* Webpack for bundling javascript
 
 Universal means that the same code is run both on the server and on the client
 (Browser). The language used is EcmaScript 2015 (modern Javascript) with some
@@ -15,10 +17,16 @@ or deployed to any environment that supports Node.js.
 This is the setup that we are transitioning our applications to at the Zetkin
 Foundation.
 
+## Build and run
+
+    $ npm install
+    $ npm start
+
 ## Running in Docker
 This repository contains a [Docker][1] image definition that can be used to
-run the boilerplate application, and a [Docker Compose][2] configuration to
-build and start the image.
+run the boilerplate application in a Docker container which contains all the
+necessary system dependencies. The repository also contains and a config file
+for [Docker Compose][2], which simplifies building and starting the image.
 
 If you don't already have a docker machine running, you might first have to
 follow the [Docker Machine setup instructions][3]. Once that's done, starting
