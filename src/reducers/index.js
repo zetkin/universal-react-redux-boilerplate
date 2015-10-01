@@ -1,4 +1,5 @@
-import { combineReducers } from 'redux';
+import { combineReducers, compose, createStore } from 'redux';
+import { devTools } from 'redux-devtools';
 
 import { SET_MESSAGE } from '../actions';
 
@@ -12,8 +13,10 @@ function message(state = 'Hello world!', action) {
     }
 }
 
-const appState = combineReducers({
+export const appState = combineReducers({
     message
 });
 
-export default appState;
+export const finalCreateStore = compose(
+    devTools()
+)(createStore);

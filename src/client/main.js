@@ -1,13 +1,12 @@
 import React from 'react/addons';
-import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import appState from '../reducers';
+import { appState, finalCreateStore } from '../reducers';
 import App from '../components/App';
 
 
 window.onload = function() {
-    const store = createStore(appState);
+    const store = finalCreateStore(appState);
 
     const app = (
         <Provider store={ store }>

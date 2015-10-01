@@ -1,10 +1,9 @@
-import { createStore } from 'redux';
 import express from 'express';
 import path from 'path';
 import React from 'react/addons';
 import { Provider } from 'react-redux';
 
-import appState from '../reducers';
+import { appState, finalCreateStore } from '../reducers';
 import App from '../components/App';
 
 
@@ -24,7 +23,7 @@ app.use('/static/', express.static(
     { fallthrough: false }));
 
 app.use(function(req, res, next) {
-    req.store = createStore(appState);
+    req.store = finalCreateStore(appState);
 
     try {
         const html = React.renderToString(
