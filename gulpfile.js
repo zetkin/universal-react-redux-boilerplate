@@ -6,7 +6,7 @@ var webpack = require('webpack');
 var webpackConfig = require('./webpack.config.js');
 
 var babelConfig = {
-    stage: 1
+    stage: 0
 };
 
 var jsSrc = 'src/**/*.@(js|jsx)';
